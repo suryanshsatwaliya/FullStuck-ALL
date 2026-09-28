@@ -6,7 +6,6 @@ const students = [
     { id: 5, name: "Charlie" , address: "202 Maple Dr"},
 ];
 
-
 const express = require("express");
 const app = express();
 
@@ -51,9 +50,6 @@ app.delete("/api/student", (req, res) => {
     const student = students.filter((std) => {
         return std.id == id;
     });
-
-    
-
 
 });
 
